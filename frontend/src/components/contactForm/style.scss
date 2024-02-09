@@ -1,0 +1,73 @@
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+    gap: 20px;
+
+    .copyEmail {
+        display: flex;
+        align-self: center;
+        justify-content: space-between;
+        background-color: #000;
+        width: 500px;
+        padding: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+
+        span {
+            font-size: 24px;
+            color: white;
+        }
+
+        i {
+            color: white;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        gap: 15px;
+        width: 530px;
+
+        .field {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+
+            label {
+                font-size: 20px;
+            }
+
+            input {
+                border-radius: 6px;
+                font-size: 16px;
+                padding: 12px;
+                border: 1px solid rgb(194, 194, 194);
+            }
+
+            textarea {
+                resize: none;
+                height: 100px;
+                font-family: "Arial";
+                font-size: 16px;
+                border-radius: 6px;
+                padding: 12px;
+                border: 1px solid rgb(194, 194, 194);
+            }
+        }
+
+        button {
+            align-self: center;
+            background-color: #000;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 5px;
+            font-size: 16px;
+            width: fit-content;
+            cursor: pointer;
+        }
+    }
+}

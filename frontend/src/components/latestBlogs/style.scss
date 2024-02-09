@@ -1,0 +1,89 @@
+.blogs {
+    display: flex;
+    flex-direction: column;
+
+    width: 960px;
+    font-family: "Dosis", sans-serif;
+
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background-color: white;
+        width: 90%;
+        height: fit-content;
+        gap: 20px;
+        border-radius: 15px;
+        padding: 30px;
+        border: 1px solid rgb(194, 194, 194);
+        transition: all 0.3s;
+        margin-bottom: 25px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            outline: 3px solid #5865f2;
+            cursor: pointer;
+        }
+
+        .blogHeader {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            .leftContent {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .blogType {
+                    background-color: rgb(246, 25, 25);
+                    width: fit-content;
+                    padding: 3px 10px;
+                    color: white;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                }
+
+                .dateSince,
+                .date {
+                    display: flex;
+                    align-items: center;
+
+                    color: #5865f2;
+                    font-size: 18px;
+                    letter-spacing: 2px;
+                }
+            }
+
+            .blogNumber {
+                display: flex;
+                align-items: center;
+
+                color: #5865f2;
+                font-size: 18px;
+                letter-spacing: 2px;
+            }
+        }
+
+        .blogTitle {
+            font-weight: 300;
+            color: #5865f2;
+            letter-spacing: 2px;
+            width: fit-content;
+            font-weight: bold;
+            font-size: 45px;
+        }
+
+        .blogDescription {
+            color: rgb(137, 137, 137);
+            font-size: 18px;
+            letter-spacing: 2px;
+            line-height: 23px;
+        }
+    }
+}
