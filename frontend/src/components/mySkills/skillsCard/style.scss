@@ -1,0 +1,57 @@
+.skillsCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lato";
+    gap: 50px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(245, 245, 245, 1) 100%);
+    padding: 40px;
+    transition: all 0.4s;
+
+    .skillsCardTitle {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        div {
+            width: 25px;
+            height: 5px;
+            background-color: #000;
+        }
+
+        h3 {
+            align-self: flex-start;
+            font-weight: 100;
+            font-size: 19px;
+        }
+    }
+
+    .skills {
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+
+        .skill {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            transition: all 0.5s;
+
+            img {
+                width: 60px;
+            }
+
+            span {
+                font-weight: bold;
+                font-size: 15px;
+            }
+        }
+
+        .notHovered {
+            opacity: 0.6;
+        }
+    }
+}

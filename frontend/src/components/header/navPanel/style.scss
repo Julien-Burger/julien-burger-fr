@@ -12,6 +12,7 @@ nav {
         padding: 10px 0px;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
         background-color: white;
+        min-width: 150px;
 
         li {
             padding: 5px 10px;
@@ -22,6 +23,20 @@ nav {
             &:hover {
                 background-position: -100% 0;
                 cursor: pointer;
+            }
+
+            a {
+                color: #000;
+            }
+        }
+
+        .separation {
+            border-top: 1px solid #000;
+            transition: none;
+            padding: 0;
+
+            &:hover {
+                cursor: default;
             }
         }
     }

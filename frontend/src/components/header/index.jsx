@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 
-import { imgMng } from "../../utils/imageManager";
+import saltyKarmaLogo from "../../assets/salty_karma_logo.webp";
 import "./style.scss";
 import NavPanel from "./navPanel";
 import { useOutsideClick } from "../../utils/hooks";
@@ -10,6 +11,7 @@ function Header() {
     const [y, setY] = useState(window.scrollY);
     const [showNavPanel, setShowNavPanel] = useState(false);
     const navPanelRef = useRef();
+    const { t, i18n } = useTranslation("header");
 
     useOutsideClick(navPanelRef, () => {
         setShowNavPanel(false);
@@ -29,8 +31,10 @@ function Header() {
     const handleClickSwitchLanguage = () => {
         if (displayedLang == "fr") {
             setDisplayedLang("en");
+            i18n.changeLanguage("en");
         } else {
             setDisplayedLang("fr");
+            i18n.changeLanguage("fr");
         }
     };
 
@@ -38,7 +42,7 @@ function Header() {
         <header style={y > 0 ? { borderBottom: "1px solid rgb(219 219 219)" } : {}}>
             <div className="innerHeader">
                 <div className="saltyKarma">
-                    <img className="saltyKarmaLogo" src={imgMng.saltyKarmaLogo} alt="Salty Karma logo" />
+                    <img className="saltyKarmaLogo" src={saltyKarmaLogo} alt="Salty Karma logo" />
                     <h1>
                         <span>Salty</span> Karma
                     </h1>
@@ -49,7 +53,7 @@ function Header() {
                     onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 >
                     <i className="fa-solid fa-arrow-up fa-lg"></i>
-                    <span>Retourner en haut</span>
+                    <span>{t("backUp")}</span>
                 </div>
 
                 <div className="rightContent">

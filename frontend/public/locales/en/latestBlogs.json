@@ -1,0 +1,14 @@
+{
+    "latestBlogs": "Latest blogs",
+    "blog1Title": "Welcome to the Salty Karma family.",
+    "blog1Description": "It's finally here! The official website of the Salty Karma studio, where you'll regularly find blogs on a variety of subjects, including DevBlogs on the studio's next project, which will be announced very soon!",
+    "blog2Title": "How did I learn to make video games?",
+    "blog2Description": "Do you dream of making your own video games? Would you like to learn how to code or use software such as Unity, but don't know where to start?",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "daysAgo": "days ago",
+    "monthsAgo": "months ago",
+    "monthAgo": "month ago",
+    "yearsAgo": "years ago",
+    "yearAgo": "year ago"
+}
