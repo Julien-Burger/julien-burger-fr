@@ -28,8 +28,13 @@ function NavPanel({ showNavPanel, setShowNavPanel }) {
                 </li>
                 <li className="separation"></li>
                 <li>
-                    <a href="#contactMe">
+                    <a href="">
                         <i className="fa-regular fa-newspaper"></i> Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i className="fa-solid fa-address-card"></i> Portfolio
                     </a>
                 </li>
                 <li>

@@ -26,6 +26,9 @@ nav {
             }
 
             a {
+                display: flex;
+                align-items: center;
+                gap: 10px;
                 color: #000;
             }
         }

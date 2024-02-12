@@ -7,11 +7,11 @@ import NavPanel from "./navPanel";
 import { useOutsideClick } from "../../utils/hooks";
 
 function Header() {
-    const [displayedLang, setDisplayedLang] = useState("fr");
+    const { t, i18n } = useTranslation("header");
+    const [displayedLang, setDisplayedLang] = useState(i18n.language);
     const [y, setY] = useState(window.scrollY);
     const [showNavPanel, setShowNavPanel] = useState(false);
     const navPanelRef = useRef();
-    const { t, i18n } = useTranslation("header");
 
     useOutsideClick(navPanelRef, () => {
         setShowNavPanel(false);
@@ -59,7 +59,7 @@ function Header() {
                 <div className="rightContent">
                     <button className="languageContainer" onClick={handleClickSwitchLanguage}>
                         <i className="fa-solid fa-globe"></i>
-                        {displayedLang == "fr" ? <span>Français</span> : <span>English</span>}
+                        {i18n.language == "fr" ? <span>Français</span> : <span>English</span>}
                     </button>
 
                     <div className="navPanelContainer" ref={navPanelRef}>

@@ -1,7 +1,10 @@
-import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 import "./style.scss";
 
 function Footer() {
+    const { t } = useTranslation("footer");
+
     return (
         <footer>
             <div>
@@ -51,7 +54,7 @@ function Footer() {
                     <span>Instagram</span>
                 </a>
             </div>
-            <p>© Salty Karma 2024 tous droits réservés</p>
+            <p>© Salty Karma 2024, {t("allRights")}</p>
         </footer>
     );
 }
