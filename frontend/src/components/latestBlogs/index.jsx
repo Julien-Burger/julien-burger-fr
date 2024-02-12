@@ -62,35 +62,39 @@ function LastestBlogs() {
                 <h2>{t("latestBlogs")}</h2>
             </div>
 
-            <article>
-                <div className="blogHeader">
-                    <div className="leftContent">
-                        <p className="blogType">Article</p>
-                        <p className="dateSince">{getDateSince("01/01/2000")}</p>
+            <a href="https://blog.saltykarma.com/blog/8191588b-9709-4395-bb7a-65d40ced331e">
+                <article>
+                    <div className="blogHeader">
+                        <div className="leftContent">
+                            <p className="blogType">Article</p>
+                            <p className="dateSince">{getDateSince("01/01/2000")}</p>
+                        </div>
+
+                        <p className="blogNumber">Blog N°2</p>
                     </div>
 
-                    <p className="blogNumber">Blog N°2</p>
-                </div>
+                    <h3 className="blogTitle">{t("blog2Title")}</h3>
 
-                <h3 className="blogTitle">{t("blog2Title")}</h3>
+                    <p className="blogDescription">{t("blog2Description")}</p>
+                </article>
+            </a>
 
-                <p className="blogDescription">{t("blog2Description")}</p>
-            </article>
+            <a href="https://blog.saltykarma.com/blog/fae8e46f-18e8-4631-a860-ed3eec72d52d">
+                <article>
+                    <div className="blogHeader">
+                        <div className="leftContent">
+                            <p className="blogType">Article</p>
+                            <p className="dateSince">{getDateSince("01/01/2000")}</p>
+                        </div>
 
-            <article>
-                <div className="blogHeader">
-                    <div className="leftContent">
-                        <p className="blogType">Article</p>
-                        <p className="dateSince">{getDateSince("01/01/2000")}</p>
+                        <p className="blogNumber">Blog N°1</p>
                     </div>
 
-                    <p className="blogNumber">Blog N°1</p>
-                </div>
+                    <h3 className="blogTitle">{t("blog1Title")}</h3>
 
-                <h3 className="blogTitle">{t("blog1Title")}</h3>
-
-                <p className="blogDescription">{t("blog1Description")}</p>
-            </article>
+                    <p className="blogDescription">{t("blog1Description")}</p>
+                </article>
+            </a>
         </section>
     );
 }
