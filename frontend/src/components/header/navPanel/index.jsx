@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 import "./style.scss";
 
@@ -28,18 +29,23 @@ function NavPanel({ showNavPanel, setShowNavPanel }) {
                 </li>
                 <li className="separation"></li>
                 <li>
-                    <a href="">
-                        <i className="fa-regular fa-newspaper"></i> Blog
+                    <a href="https://www.saltykarma.com">
+                        <i className="fa-solid fa-house"></i>Salty Karma
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        <i className="fa-solid fa-address-card"></i> Portfolio
+                    <a href="https://blog.saltykarma.com">
+                        <i className="fa-regular fa-newspaper"></i>Blog
                     </a>
+                </li>
+                <li>
+                    <Link to="/" reloadDocument>
+                        <i className="fa-solid fa-address-card"></i>Portfolio
+                    </Link>
                 </li>
                 <li>
                     <a href="https://github.com/Salty-Julien" target="_blank">
-                        <i className="fa-brands fa-github"></i> Github
+                        <i className="fa-brands fa-github"></i>Github
                     </a>
                 </li>
             </ul>

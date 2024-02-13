@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import saltyKarmaLogo from "../../assets/salty_karma_logo.webp";
+import saltyKarmaLogo from "../../assets/salty_karma_logo.png";
 import "./style.scss";
 import NavPanel from "./navPanel";
 import { useOutsideClick } from "../../utils/hooks";
@@ -41,12 +41,12 @@ function Header() {
     return (
         <header style={y > 0 ? { borderBottom: "1px solid rgb(219 219 219)" } : {}}>
             <div className="innerHeader">
-                <div className="saltyKarma">
+                <a href="https://www.saltykarma.com" className="saltyKarma">
                     <img className="saltyKarmaLogo" src={saltyKarmaLogo} alt="Salty Karma logo" />
                     <h1>
                         <span>Salty</span> Karma
                     </h1>
-                </div>
+                </a>
 
                 <div
                     className={y > 0 ? "backUp backupShow" : "backUp"}
