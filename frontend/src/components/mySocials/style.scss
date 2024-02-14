@@ -1,0 +1,59 @@
+.mySocials {
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+
+    .socials {
+        display: flex;
+        gap: 20px;
+        height: 240px;
+
+        .leftContent,
+        .rightContent {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 50%;
+
+            div,
+            a {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: #fff;
+                width: calc(100% - 40px);
+                border-radius: 10px;
+                padding: 0px 20px;
+                cursor: pointer;
+
+                span {
+                    font-size: 21px;
+                }
+            }
+
+            .github {
+                background-color: #24292e;
+                height: 70%;
+            }
+
+            .discord {
+                background-color: #2d52a9;
+                height: 30%;
+
+                span {
+                    flex: 1;
+                }
+            }
+
+            .blog {
+                background-color: #000;
+                height: 70%;
+            }
+
+            .TBO {
+                background-color: #1b2838;
+                height: 30%;
+            }
+        }
+    }
+}

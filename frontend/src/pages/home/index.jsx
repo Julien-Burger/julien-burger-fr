@@ -1,9 +1,10 @@
 import AboutMe from "../../components/aboutMe";
-import ContactForm from "../../components/contactForm";
-import LastestBlogs from "../../components/latestBlogs";
-import MySkills from "../../components/mySkills";
-import MyProjects from "../../components/myProjects";
 import MyServices from "../../components/myServices";
+import MyProjects from "../../components/myProjects";
+import MySkills from "../../components/mySkills";
+import LastestBlogs from "../../components/latestBlogs";
+import MySocials from "../../components/mySocials";
+import ContactForm from "../../components/contactForm";
 
 function Home() {
     return (
@@ -13,6 +14,7 @@ function Home() {
             <MyProjects />
             <MySkills />
             <LastestBlogs />
+            <MySocials />
             <ContactForm />
         </>
     );

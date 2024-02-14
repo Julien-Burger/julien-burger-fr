@@ -36,15 +36,6 @@ function Footer() {
                     <span>Discord</span>
                 </a>
                 <a
-                    className="twitterLink"
-                    href="https://twitter.com/Salty_Julien"
-                    target="_blank"
-                    aria-label="Follow me on Twitter"
-                >
-                    <i className="fa-brands fa-twitter"></i>
-                    <span>Twitter</span>
-                </a>
-                <a
                     className="instagramLink"
                     href="https://www.instagram.com/salty_karma_studio/"
                     target="_blank"
