@@ -39,9 +39,9 @@ function NavPanel({ showNavPanel, setShowNavPanel }) {
                     </a>
                 </li>
                 <li>
-                    <Link to="/" reloadDocument>
-                        <i className="fa-solid fa-address-card"></i>Portfolio
-                    </Link>
+                    <a href="https://store.steampowered.com/app/2232680/The_Big_One/" target="_blank">
+                        <i className="fa-brands fa-steam"></i>Steam
+                    </a>
                 </li>
                 <li>
                     <a href="https://github.com/Salty-Julien" target="_blank">
