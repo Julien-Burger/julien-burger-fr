@@ -1,13 +1,16 @@
 import { useRef, useState } from "react";
 import swal from "sweetalert";
 import { useTranslation } from "react-i18next";
+import axios from "axios";
 
 import "./style.scss";
+import { isEmptyString } from "../../utils/common";
 
 function ContactForm() {
     const [showCopyEmail, setShowCopyEmail] = useState(false);
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+    const [formInvalid, setFormInvalid] = useState(false);
     const timerRef = useRef();
     const { t } = useTranslation("contactForm");
 
@@ -21,19 +24,39 @@ function ContactForm() {
         }, 2000);
     };
 
-    const handleSubmitContact = (e) => {
+    const handleSubmitContact = async (e) => {
         e.preventDefault();
 
-        setEmail("");
-        setMessage("");
+        if (isEmptyString(e.target.email.value) || isEmptyString(e.target.message.value)) {
+            setFormInvalid(true);
+            return;
+        }
 
-        swal({
-            text: "Votre message a bien été envoyé.",
-            icon: "success",
-            buttons: {
-                confirm: "Fermer",
-            },
-        });
+        try {
+            const data = {
+                email: e.target.email.value,
+                message: e.target.message.value,
+            };
+
+            await axios.post("http://localhost:4000/contact", data);
+
+            setEmail("");
+            setMessage("");
+            setFormInvalid(false);
+
+            swal({
+                text: "Votre message a bien été envoyé.",
+                icon: "success",
+                buttons: {
+                    confirm: "Fermer",
+                },
+            });
+        } catch (err) {
+            swal({
+                text: "Problème serveur. Veuillez réessayer plus tard.",
+                icon: "error",
+            });
+        }
     };
 
     return (
@@ -62,7 +85,7 @@ function ContactForm() {
                         placeholder="john@doe.com"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        required
+                        className={formInvalid ? "formInvalid" : ""}
                     />
                 </div>
                 <div className="field">
@@ -73,7 +96,7 @@ function ContactForm() {
                         placeholder="Que souhaitez-vous dire ?"
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
-                        required
+                        className={formInvalid ? "formInvalid" : ""}
                     ></textarea>
                 </div>
 
