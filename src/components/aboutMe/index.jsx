@@ -1,17 +1,25 @@
+import { useTranslation, Trans } from "react-i18next";
+
 import "./style.scss";
 
 function AboutMe() {
+    const { t } = useTranslation("aboutMe");
+
     return (
         <section className="aboutMe" id="aboutMe">
             <div>
-                <h2>À propos de moi</h2>
+                <h2>{t("aboutMe")}</h2>
                 <p>
-                    Passionné par le développement de <b>jeux vidéo et le développement web</b> depuis toujours, j'ai débuté la
-                    programmation à l'âge de 15 ans en autodidacte.
+                    <Trans ns="aboutMe" i18nKey="firstParagraph">
+                        Passionné par le développement de <b>jeux vidéo et le développement web</b> depuis toujours, j'ai débuté
+                        la programmation à l'âge de 15 ans en autodidacte.
+                    </Trans>
                 </p>
                 <p>
-                    Spécialisé dans le développement <b>full-stack</b>, j'ai eu l'occasion de développer divers applications web
-                    et mobile ainsi qu'un <b>logiciel professionnel</b> d'impression.
+                    <Trans ns="aboutMe" i18nKey="secondParagraph">
+                        Spécialisé dans le développement <b>full-stack</b>, j'ai eu l'occasion de développer divers applications
+                        web et mobile ainsi qu'un <b>logiciel professionnel</b> d'impression.
+                    </Trans>
                 </p>
             </div>
         </section>
