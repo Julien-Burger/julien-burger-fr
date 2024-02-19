@@ -69,7 +69,7 @@ function MySkills() {
     const { t } = useTranslation("mySkills");
 
     return (
-        <div className="mySkills" id="mySkills">
+        <section className="mySkills" id="mySkills">
             <div className="title">
                 <div></div>
                 <div></div>
@@ -81,7 +81,7 @@ function MySkills() {
                 <SkillsCard title={t("iWorkWith")} skills={skillsBundle1} />
                 <SkillsCard title={t("toolsIUse")} skills={skillsBundle2} />
             </div>
-        </div>
+        </section>
     );
 }
 

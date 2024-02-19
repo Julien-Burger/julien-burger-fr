@@ -60,7 +60,7 @@ function ContactForm() {
     };
 
     return (
-        <div className="contactForm" id="contactMe">
+        <section className="contactForm" id="contactMe">
             <div className="title">
                 <div></div>
                 <div></div>
@@ -102,7 +102,7 @@ function ContactForm() {
 
                 <button>{t("send")}</button>
             </form>
-        </div>
+        </section>
     );
 }
 

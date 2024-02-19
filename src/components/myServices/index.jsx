@@ -11,7 +11,7 @@ function MyServices() {
     const { t } = useTranslation("myServices");
 
     return (
-        <div className="myServices" id="myServices">
+        <section className="myServices" id="myServices">
             <div className="title">
                 <div></div>
                 <div></div>
@@ -40,7 +40,7 @@ function MyServices() {
             <a href={cv} download="CV Burger Julien.pdf">
                 {t("downloadCV")}
             </a>
-        </div>
+        </section>
     );
 }
 

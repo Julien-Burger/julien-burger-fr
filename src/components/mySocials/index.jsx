@@ -19,7 +19,7 @@ function MySocials() {
     };
 
     return (
-        <div className="mySocials">
+        <section className="mySocials">
             <div className="title">
                 <div></div>
                 <div></div>
@@ -52,7 +52,7 @@ function MySocials() {
                     </a>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 
