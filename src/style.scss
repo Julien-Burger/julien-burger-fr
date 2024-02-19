@@ -75,6 +75,24 @@ body {
     }
 }
 
+.subTitle {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    div {
+        width: 25px;
+        height: 5px;
+        background-color: #000;
+    }
+
+    h3 {
+        align-self: flex-start;
+        font-weight: 100;
+        font-size: 19px;
+    }
+}
+
 .swal-text {
     font-family: "Lato";
 }

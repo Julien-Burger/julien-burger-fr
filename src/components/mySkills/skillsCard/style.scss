@@ -9,24 +9,6 @@
     padding: 40px;
     transition: all 0.4s;
 
-    .skillsCardTitle {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-
-        div {
-            width: 25px;
-            height: 5px;
-            background-color: #000;
-        }
-
-        h3 {
-            align-self: flex-start;
-            font-weight: 100;
-            font-size: 19px;
-        }
-    }
-
     .skills {
         display: flex;
         justify-content: space-between;

@@ -7,7 +7,7 @@ function SkillsCard({ title, skills }) {
 
     return (
         <div className="skillsCard">
-            <div className="skillsCardTitle">
+            <div className="subTitle">
                 <div></div>
                 <h3>{title}</h3>
                 <div></div>
