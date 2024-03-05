@@ -36,7 +36,7 @@ function MySocials() {
                     <div className="discord" onClick={handleClickCopyEmail}>
                         <i className="fa-brands fa-discord fa-xl"></i>
                         {!showCopyEmail && <span>Salty_Julien#3311</span>}
-                        {showCopyEmail && <span>Copié dans le presse papier</span>}
+                        {showCopyEmail && <span>{t("copied")}</span>}
                         {!showCopyEmail && <i className="fa-regular fa-clipboard fa-2xl"></i>}
                         {showCopyEmail && <i className="fa-solid fa-clipboard-check fa-2xl"></i>}
                     </div>
