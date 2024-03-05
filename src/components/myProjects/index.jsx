@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import "./style.scss";
 
@@ -15,37 +16,39 @@ import nodejs from "../../assets/skills/node_js.svg";
 import mongodb from "../../assets/skills/mongodb.svg";
 
 function MyProjects() {
+    const { t } = useTranslation("myProjects");
+
     return (
         <section className="myProjects" id="myProjects">
             <div className="title">
                 <div></div>
                 <div></div>
                 <div></div>
-                <h2>Mes projets</h2>
+                <h2>{t("myProjects")}</h2>
             </div>
 
             <div className="subTitle">
                 <div></div>
-                <h3>Gros projets</h3>
+                <h3>{t("bigProjects")}</h3>
                 <div></div>
             </div>
 
             <div className="major">
                 <article className="project">
-                    <div className="wallpaper">
+                    <a href="https://www.preventimark.com/markprint" target="_blank" className="wallpaper">
                         <div>
                             <span>2023-2024</span>
                             <h4>MarkPrint</h4>
-                            <p>Logiciel d'impression d'étiquette professionnel</p>
+                            <p>{t("bigProject1Def")}</p>
                         </div>
                         <img src={markprint} />
-                    </div>
+                    </a>
                     <div className="footer">
                         <div className="tags">
-                            <Link to="/" className="tag link">
+                            {/* <Link to="/" className="tag link">
                                 <i className="fa-solid fa-book"></i>
                                 <span>Lire l'étude</span>
-                            </Link>
+                            </Link> */}
                             <div className="tag">
                                 <span>Front-end</span>
                             </div>
@@ -68,29 +71,29 @@ function MyProjects() {
                     </div>
                 </article>
                 <article className="project">
-                    <div className="wallpaper">
+                    <a href="https://github.com/Salty-Julien/the-big-one-code" target="_blank" className="wallpaper">
                         <div>
                             <span>2022-2023</span>
                             <h4>The Big One</h4>
-                            <p>Jeux-vidéo rogue-like, pixelart</p>
+                            <p>{t("bigProject2Def")}</p>
                         </div>
                         <img src={tbo} />
-                    </div>
+                    </a>
                     <div className="footer">
                         <div className="tags">
                             <a href="https://github.com/Salty-Julien/the-big-one-code" target="_blank" className="tag link">
                                 <i className="fa-brands fa-github fa-lg"></i>
                                 <span>Github</span>
                             </a>
-                            <Link to="/" className="tag link">
+                            {/* <Link to="/" className="tag link">
                                 <i className="fa-solid fa-book fa"></i>
                                 <span>Lire l'étude</span>
-                            </Link>
+                            </Link> */}
                             <div className="tag">
                                 <span>C#</span>
                             </div>
                             <div className="tag">
-                                <span>Direction artistique</span>
+                                <span>{t("da")}</span>
                             </div>
                         </div>
                         <div className="techIcons">
@@ -103,30 +106,30 @@ function MyProjects() {
 
             <div className="subTitle">
                 <div></div>
-                <h3>Petits projets</h3>
+                <h3>{t("smallProjects")}</h3>
                 <div></div>
             </div>
 
             <div className="little">
                 <article className="project">
-                    <div className="wallpaper">
+                    <a href="https://github.com/Salty-Julien/mon-vieux-grimoire" target="_blank" className="wallpaper">
                         <div>
                             <span>2023</span>
                             <h4>Mon vieux grimoire</h4>
-                            <p>Site de notation de livres</p>
+                            <p>{t("smallProject1Def")}</p>
                         </div>
                         <img src={markprint} />
-                    </div>
+                    </a>
                     <div className="footer">
                         <div className="tags">
                             <a href="https://github.com/Salty-Julien/mon-vieux-grimoire" target="_blank" className="tag link">
                                 <i className="fa-brands fa-github fa-lg"></i>
                                 <span>Github</span>
                             </a>
-                            <Link to="/" className="tag link">
+                            {/* <Link to="/" className="tag link">
                                 <i className="fa-solid fa-book fa"></i>
                                 <span>Lire l'étude</span>
-                            </Link>
+                            </Link> */}
                             <div className="tag">
                                 <span>Back-end</span>
                             </div>
@@ -138,24 +141,24 @@ function MyProjects() {
                     </div>
                 </article>
                 <article className="project">
-                    <div className="wallpaper">
+                    <a href="https://github.com/Salty-Julien/kasa" target="_blank" className="wallpaper">
                         <div>
                             <span>2023</span>
                             <h4>Kasa</h4>
-                            <p>Appli web de location immobilière</p>
+                            <p>{t("smallProject2Def")}</p>
                         </div>
                         <img src={kasa} />
-                    </div>
+                    </a>
                     <div className="footer">
                         <div className="tags">
                             <a href="https://github.com/Salty-Julien/kasa" target="_blank" className="tag link">
                                 <i className="fa-brands fa-github fa-lg"></i>
                                 <span>Github</span>
                             </a>
-                            <Link to="/" className="tag link">
+                            {/* <Link to="/" className="tag link">
                                 <i className="fa-solid fa-book fa"></i>
                                 <span>Lire l'étude</span>
-                            </Link>
+                            </Link> */}
                             <div className="tag">
                                 <span>Front-end</span>
                             </div>
