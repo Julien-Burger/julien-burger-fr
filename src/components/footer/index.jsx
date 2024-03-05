@@ -39,10 +39,19 @@ function Footer() {
                     className="instagramLink"
                     href="https://www.instagram.com/salty_karma_studio/"
                     target="_blank"
-                    aria-label="Follow me on Instagram"
+                    aria-label="Follow us on Instagram"
                 >
                     <i className="fa-brands fa-instagram fa-lg"></i>
                     <span>Instagram</span>
+                </a>
+                <a
+                    className="tiktokLink"
+                    href="https://www.tiktok.com/@salty_karma?_t=8kQtBCBMNbF&_r=1"
+                    target="_blank"
+                    aria-label="Follow us on Tiktok"
+                >
+                    <i className="fa-brands fa-tiktok fa-lg"></i>
+                    <span>Tiktok</span>
                 </a>
             </div>
             <p>© Salty Karma 2024, {t("allRights")}</p>

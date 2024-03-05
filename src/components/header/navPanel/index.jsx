@@ -10,25 +10,6 @@ function NavPanel({ showNavPanel, setShowNavPanel }) {
         <nav>
             <ul style={showNavPanel ? { display: "flex" } : {}}>
                 <li>
-                    <a href="#aboutMe">{t("aboutMe")}</a>
-                </li>
-                <li>
-                    <a href="#myServices">{t("myServices")}</a>
-                </li>
-                <li>
-                    <a href="#myProjects">{t("myProjects")}</a>
-                </li>
-                <li>
-                    <a href="#mySkills">{t("mySkills")}</a>
-                </li>
-                <li>
-                    <a href="#latestBlogs">{t("latestBlogs")}</a>
-                </li>
-                <li>
-                    <a href="#contactMe">{t("contactMe")}</a>
-                </li>
-                <li className="separation"></li>
-                <li>
                     <a href="https://www.saltykarma.com">
                         <i className="fa-solid fa-house"></i>Salty Karma
                     </a>
