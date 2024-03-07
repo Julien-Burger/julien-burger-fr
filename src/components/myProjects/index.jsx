@@ -6,6 +6,7 @@ import "./style.scss";
 import markprint from "../../assets/myProjects/markprint.png";
 import tbo from "../../assets/myProjects/the_big_one.png";
 import kasa from "../../assets/myProjects/kasa.png";
+import monVieuxGrimoire from "../../assets/myProjects/mon_vieux_grimoire.png";
 import react from "../../assets/skills/react.svg";
 import mySql from "../../assets/skills/mysql.svg";
 import electron from "../../assets/skills/electron.svg";
@@ -118,7 +119,7 @@ function MyProjects() {
                             <h4>Mon vieux grimoire</h4>
                             <p>{t("smallProject1Def")}</p>
                         </div>
-                        <img src={markprint} />
+                        <img src={monVieuxGrimoire} />
                     </a>
                     <div className="footer">
                         <div className="tags">
