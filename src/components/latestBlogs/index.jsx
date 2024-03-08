@@ -59,7 +59,7 @@ function LastestBlogs() {
                 <div></div>
                 <div></div>
                 <div></div>
-                <h2>{t("latestBlogs")}</h2>
+                <h3>{t("latestBlogs")}</h3>
             </div>
 
             <a href="https://blog.saltykarma.com/blog/8191588b-9709-4395-bb7a-65d40ced331e">

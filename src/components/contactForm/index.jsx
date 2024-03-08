@@ -65,7 +65,7 @@ function ContactForm() {
                 <div></div>
                 <div></div>
                 <div></div>
-                <h2>{t("contactMe")}</h2>
+                <h3>{t("contactMe")}</h3>
             </div>
 
             <div className="copyEmail" onClick={handleClickCopyEmail}>

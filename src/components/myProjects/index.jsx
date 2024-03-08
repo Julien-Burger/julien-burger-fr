@@ -25,12 +25,12 @@ function MyProjects() {
                 <div></div>
                 <div></div>
                 <div></div>
-                <h2>{t("myProjects")}</h2>
+                <h3>{t("myProjects")}</h3>
             </div>
 
             <div className="subTitle">
                 <div></div>
-                <h3>{t("bigProjects")}</h3>
+                <h4>{t("bigProjects")}</h4>
                 <div></div>
             </div>
 
@@ -107,7 +107,7 @@ function MyProjects() {
 
             <div className="subTitle">
                 <div></div>
-                <h3>{t("smallProjects")}</h3>
+                <h4>{t("smallProjects")}</h4>
                 <div></div>
             </div>
 

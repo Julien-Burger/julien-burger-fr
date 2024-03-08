@@ -8,7 +8,7 @@ function AboutMe() {
     return (
         <section className="aboutMe" id="aboutMe">
             <div>
-                <h2>{t("aboutMe")}</h2>
+                <h3>{t("aboutMe")}</h3>
                 <p>
                     <Trans ns="aboutMe" i18nKey="firstParagraph">
                         Passionné par le développement de <b>jeux vidéo et le développement web</b> depuis toujours, j'ai débuté

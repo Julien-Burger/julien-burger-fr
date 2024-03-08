@@ -74,7 +74,7 @@ function MySkills() {
                 <div></div>
                 <div></div>
                 <div></div>
-                <h2>{t("mySkills")}</h2>
+                <h3>{t("mySkills")}</h3>
             </div>
 
             <div className="skillsCards">

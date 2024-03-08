@@ -24,7 +24,7 @@ function MySocials() {
                 <div></div>
                 <div></div>
                 <div></div>
-                <h2>{t("mySocials")}</h2>
+                <h3>{t("mySocials")}</h3>
             </div>
 
             <div className="socials">

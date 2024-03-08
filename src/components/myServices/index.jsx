@@ -16,7 +16,7 @@ function MyServices() {
                 <div></div>
                 <div></div>
                 <div></div>
-                <h2>{t("myServices")}</h2>
+                <h3>{t("myServices")}</h3>
             </div>
 
             <div className="services">
