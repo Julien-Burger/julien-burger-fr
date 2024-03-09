@@ -1,13 +1,15 @@
 .myServices {
     display: flex;
     flex-direction: column;
-    width: 960px;
+    max-width: 960px;
+    width: calc(100% - 30px);
+    padding: 0 15px;
 
     .services {
         display: flex;
-        justify-content: space-between;
-        align-self: center;
-        width: 95%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 70px;
 
         .service {
             display: flex;

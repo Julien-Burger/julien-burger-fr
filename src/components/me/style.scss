@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
+    padding: 0 15px;
 
     h1 {
         font-size: 60px;
@@ -20,10 +21,12 @@
         margin-top: 15px;
         text-align: center;
         line-height: 27px;
+        max-width: 505px;
     }
 
     div {
         display: flex;
+        flex-wrap: wrap;
         gap: 30px;
         margin-top: 40px;
 
@@ -41,6 +44,21 @@
         a:last-of-type {
             border: 1px solid #000;
             color: #000;
+        }
+    }
+
+    @media (max-width: 530px) {
+        align-items: normal;
+
+        p {
+            text-align: start;
+        }
+
+        div {
+            a {
+                text-align: center;
+                width: 100%;
+            }
         }
     }
 }

@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import swal from "sweetalert";
 
 import "./style.scss";
 
@@ -19,6 +19,13 @@ import mongodb from "../../assets/skills/mongodb.svg";
 function MyProjects() {
     const { t } = useTranslation("myProjects");
 
+    const handleClickRead = (title, text) => {
+        swal({
+            title,
+            text,
+        });
+    };
+
     return (
         <section className="myProjects" id="myProjects">
             <div className="title">
@@ -36,20 +43,20 @@ function MyProjects() {
 
             <div className="major">
                 <article className="project">
-                    <a href="https://www.preventimark.com/markprint" target="_blank" className="wallpaper">
+                    <div className="wallpaper">
                         <div>
                             <span>2023-2024</span>
-                            <h4>MarkPrint</h4>
+                            <h5>MarkPrint</h5>
                             <p>{t("bigProject1Def")}</p>
                         </div>
                         <img src={markprint} />
-                    </a>
+                    </div>
                     <div className="footer">
                         <div className="tags">
-                            {/* <Link to="/" className="tag link">
+                            <div className="tag link" onClick={() => handleClickRead("MarkPrint", t("markprintText"))}>
                                 <i className="fa-solid fa-book"></i>
-                                <span>Lire l'étude</span>
-                            </Link> */}
+                                <span>{t("read")}</span>
+                            </div>
                             <div className="tag">
                                 <span>Front-end</span>
                             </div>
@@ -72,24 +79,24 @@ function MyProjects() {
                     </div>
                 </article>
                 <article className="project">
-                    <a href="https://github.com/Salty-Julien/the-big-one-code" target="_blank" className="wallpaper">
+                    <div className="wallpaper">
                         <div>
                             <span>2022-2023</span>
-                            <h4>The Big One</h4>
+                            <h5>The Big One</h5>
                             <p>{t("bigProject2Def")}</p>
                         </div>
                         <img src={tbo} />
-                    </a>
+                    </div>
                     <div className="footer">
                         <div className="tags">
                             <a href="https://github.com/Salty-Julien/the-big-one-code" target="_blank" className="tag link">
                                 <i className="fa-brands fa-github fa-lg"></i>
                                 <span>Github</span>
                             </a>
-                            {/* <Link to="/" className="tag link">
+                            <div className="tag link" onClick={() => handleClickRead("The Big One", t("tboText"))}>
                                 <i className="fa-solid fa-book fa"></i>
-                                <span>Lire l'étude</span>
-                            </Link> */}
+                                <span>{t("read")}</span>
+                            </div>
                             <div className="tag">
                                 <span>C#</span>
                             </div>
@@ -113,24 +120,24 @@ function MyProjects() {
 
             <div className="little">
                 <article className="project">
-                    <a href="https://github.com/Salty-Julien/mon-vieux-grimoire" target="_blank" className="wallpaper">
+                    <div className="wallpaper">
                         <div>
                             <span>2023</span>
-                            <h4>Mon vieux grimoire</h4>
+                            <h5>Mon vieux grimoire</h5>
                             <p>{t("smallProject1Def")}</p>
                         </div>
                         <img src={monVieuxGrimoire} />
-                    </a>
+                    </div>
                     <div className="footer">
                         <div className="tags">
                             <a href="https://github.com/Salty-Julien/mon-vieux-grimoire" target="_blank" className="tag link">
                                 <i className="fa-brands fa-github fa-lg"></i>
                                 <span>Github</span>
                             </a>
-                            {/* <Link to="/" className="tag link">
+                            <div className="tag link" onClick={() => handleClickRead("Mon Vieux Grimoire", t("mvgText"))}>
                                 <i className="fa-solid fa-book fa"></i>
-                                <span>Lire l'étude</span>
-                            </Link> */}
+                                <span>{t("read")}</span>
+                            </div>
                             <div className="tag">
                                 <span>Back-end</span>
                             </div>
@@ -142,24 +149,24 @@ function MyProjects() {
                     </div>
                 </article>
                 <article className="project">
-                    <a href="https://github.com/Salty-Julien/kasa" target="_blank" className="wallpaper">
+                    <div className="wallpaper">
                         <div>
                             <span>2023</span>
-                            <h4>Kasa</h4>
+                            <h5>Kasa</h5>
                             <p>{t("smallProject2Def")}</p>
                         </div>
                         <img src={kasa} />
-                    </a>
+                    </div>
                     <div className="footer">
                         <div className="tags">
                             <a href="https://github.com/Salty-Julien/kasa" target="_blank" className="tag link">
                                 <i className="fa-brands fa-github fa-lg"></i>
                                 <span>Github</span>
                             </a>
-                            {/* <Link to="/" className="tag link">
+                            <div className="tag link" onClick={() => handleClickRead("Kasa", t("kasaText"))}>
                                 <i className="fa-solid fa-book fa"></i>
-                                <span>Lire l'étude</span>
-                            </Link> */}
+                                <span>{t("read")}</span>
+                            </div>
                             <div className="tag">
                                 <span>Front-end</span>
                             </div>

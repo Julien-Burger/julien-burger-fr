@@ -1,13 +1,18 @@
 .mySkills {
     display: flex;
     flex-direction: column;
-
-    width: 960px;
-    font-family: "Dosis", sans-serif;
+    max-width: 960px;
+    width: 100%;
 
     .skillsCards {
         display: flex;
         flex-direction: column;
         gap: 60px;
+    }
+
+    @media (max-width: 960px) {
+        .title {
+            padding-left: 15px;
+        }
     }
 }

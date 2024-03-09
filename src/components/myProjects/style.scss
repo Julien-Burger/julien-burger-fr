@@ -1,11 +1,18 @@
 .myProjects {
     display: flex;
     flex-direction: column;
-    width: 960px;
+    max-width: 960px;
+    width: calc(100% - 30px);
+    padding: 0 15px;
 
     .subTitle {
         align-self: center;
         margin-bottom: 15px;
+
+        h4 {
+            font-weight: 400;
+            font-size: 20px;
+        }
     }
 
     .major {
@@ -29,12 +36,34 @@
                         font-size: 15px;
                     }
 
-                    h4 {
+                    h5 {
                         font-size: 28px;
                     }
 
                     p {
                         font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 960px) {
+            flex-wrap: wrap;
+
+            .project {
+                .wallpaper {
+                    div {
+                        span {
+                            font-size: 18px;
+                        }
+
+                        h5 {
+                            font-size: 34px;
+                        }
+
+                        p {
+                            font-size: 24px;
+                        }
                     }
                 }
             }
@@ -48,7 +77,6 @@
 
         .wallpaper {
             position: relative;
-            cursor: pointer;
             overflow: hidden;
             border-radius: 10px;
 
@@ -75,7 +103,7 @@
                     margin-left: 30px;
                 }
 
-                h4 {
+                h5 {
                     font-size: 34px;
                     margin-left: 30px;
                     text-decoration: underline;
@@ -120,10 +148,11 @@
                     }
                 }
 
-                a.tag {
+                .tag.link {
                     gap: 10px;
                     background-color: #1f1f1f;
                     color: white;
+                    cursor: pointer;
 
                     i {
                         margin-top: 2px;

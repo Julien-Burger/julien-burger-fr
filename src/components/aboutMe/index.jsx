@@ -6,7 +6,7 @@ function AboutMe() {
     const { t } = useTranslation("aboutMe");
 
     return (
-        <section className="aboutMe" id="aboutMe">
+        <section className="aboutMe">
             <div>
                 <h3>{t("aboutMe")}</h3>
                 <p>

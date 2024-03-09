@@ -11,7 +11,7 @@ function MyServices() {
     const { t } = useTranslation("myServices");
 
     return (
-        <section className="myServices" id="myServices">
+        <section className="myServices">
             <div className="title">
                 <div></div>
                 <div></div>

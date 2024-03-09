@@ -7,18 +7,33 @@
     background: rgb(14, 14, 14);
     background: linear-gradient(90deg, rgba(14, 14, 14, 1) 0%, rgba(0, 0, 0, 1) 100%);
     color: #fff;
-    padding: 80px 0px;
+    padding: 80px 15px;
 
     div {
         display: flex;
         flex-direction: column;
-        width: 500px;
+        max-width: 500px;
+        width: 100%;
         gap: 25px;
         padding-right: 300px;
 
         p {
             font-size: 18px;
             line-height: 25px;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        align-items: center;
+        width: calc(100% - 30px);
+
+        div {
+            align-items: center;
+            padding-right: 0;
+
+            p {
+                text-align: center;
+            }
         }
     }
 }

@@ -9,15 +9,7 @@ function Me() {
         <section className="me">
             <h1>Julien Burger</h1>
             <h2>{t("dev")}</h2>
-            <p>
-                <Trans i18nKey="description" ns="me">
-                    Autodidacte de 25 ans, passionné par le développement
-                    <br />
-                    et l'informatique depuis mon plus jeune âge, je pratique
-                    <br />
-                    la programmation depuis environ 10 ans.
-                </Trans>
-            </p>
+            <p>{t("description")}</p>
             <div>
                 <a href="#contactMe">{t("contactMe")}</a>
                 <a href="https://github.com/Julien-Burger" target="_blank">

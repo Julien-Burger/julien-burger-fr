@@ -1,8 +1,9 @@
 .blogs {
     display: flex;
     flex-direction: column;
-
-    width: 960px;
+    max-width: 960px;
+    width: calc(100% - 30px);
+    padding: 0 15px;
     font-family: "Dosis", sans-serif;
 
     a {

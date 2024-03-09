@@ -1,7 +1,9 @@
 .contactForm {
     display: flex;
     flex-direction: column;
-    width: 960px;
+    max-width: 960px;
+    width: calc(100% - 30px);
+    padding: 0 15px;
     gap: 20px;
 
     .copyEmail {
@@ -9,7 +11,8 @@
         align-self: center;
         justify-content: space-between;
         background-color: #000;
-        width: 500px;
+        max-width: 500px;
+        width: calc(100% - 30px);
         padding: 15px;
         border-radius: 10px;
         cursor: pointer;
@@ -21,6 +24,22 @@
 
         i {
             color: white;
+
+            @media (max-width: 345px) {
+                display: none;
+            }
+        }
+
+        @media (max-width: 345px) {
+            justify-content: center;
+
+            span {
+                font-size: 20px;
+            }
+
+            i {
+                display: none;
+            }
         }
     }
 
@@ -29,7 +48,8 @@
         flex-direction: column;
         align-self: center;
         gap: 15px;
-        width: 530px;
+        max-width: 530px;
+        width: 100%;
 
         .field {
             display: flex;
