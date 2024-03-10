@@ -29,7 +29,7 @@ function MySocials() {
 
             <div className="socials">
                 <div className="leftContent">
-                    <a href="https://github.com/Salty-Julien" target="_blank" className="github">
+                    <a href="https://github.com/Julien-Burger" target="_blank" className="github">
                         <i className="fa-brands fa-github fa-2xl"></i>
                         <span>Github</span>
                     </a>
