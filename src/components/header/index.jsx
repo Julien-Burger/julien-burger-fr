@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
-import saltyKarmaLogo from "../../assets/salty_karma_logo.png";
+import logo from "../../assets/logo/logo_version_1.png";
 import "./style.scss";
 import NavPanel from "./navPanel";
 import { useOutsideClick } from "../../utils/hooks";
@@ -41,17 +42,14 @@ function Header() {
     return (
         <header style={y > 0 ? { borderBottom: "1px solid rgb(219 219 219)" } : {}}>
             <div className="innerHeader">
-                <a href="https://www.saltykarma.com" className="saltyKarma">
-                    <img className="saltyKarmaLogo" src={saltyKarmaLogo} alt="Salty Karma logo" />
-                    <h1>
-                        <span>Salty</span> Karma
-                    </h1>
-                </a>
+                <Link to="/" reloadDocument className="leftContent">
+                    <img src={logo} alt="Julien Burger logo" className={y > 0 ? "logo hide" : "logo"} />
+                    <h2 className={y > 0 ? "name show" : "name"}>
+                        <span>Julien</span> Burger
+                    </h2>
+                </Link>
 
-                <div
-                    className={y > 0 ? "backUp backupShow" : "backUp"}
-                    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                >
+                <div className={y > 0 ? "backUp show" : "backUp"} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
                     <i className="fa-solid fa-arrow-up fa-lg"></i>
                     <span>{t("backUp")}</span>
                 </div>

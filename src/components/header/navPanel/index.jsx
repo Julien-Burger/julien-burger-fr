@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 
 import "./style.scss";
 
@@ -10,13 +9,81 @@ function NavPanel({ showNavPanel, setShowNavPanel }) {
         <nav>
             <ul style={showNavPanel ? { display: "flex" } : {}}>
                 <li>
-                    <a href="https://www.saltykarma.com">
-                        <i className="fa-solid fa-house"></i>Salty Karma
+                    <a
+                        onClick={() =>
+                            window.scrollTo({
+                                top: 407,
+                                behavior: "smooth",
+                            })
+                        }
+                    >
+                        {t("aboutMe")}
                     </a>
                 </li>
                 <li>
+                    <a
+                        onClick={() =>
+                            window.scrollTo({
+                                top: 840,
+                                behavior: "smooth",
+                            })
+                        }
+                    >
+                        {t("myServices")}
+                    </a>
+                </li>
+                <li>
+                    <a
+                        onClick={() =>
+                            window.scrollTo({
+                                top: 1315,
+                                behavior: "smooth",
+                            })
+                        }
+                    >
+                        {t("myProjects")}
+                    </a>
+                </li>
+                <li>
+                    <a
+                        onClick={() =>
+                            window.scrollTo({
+                                top: 3040,
+                                behavior: "smooth",
+                            })
+                        }
+                    >
+                        {t("mySkills")}
+                    </a>
+                </li>
+                <li>
+                    <a
+                        onClick={() =>
+                            window.scrollTo({
+                                top: 4000,
+                                behavior: "smooth",
+                            })
+                        }
+                    >
+                        {t("socials")}
+                    </a>
+                </li>
+                <li>
+                    <a
+                        onClick={() =>
+                            window.scrollTo({
+                                top: 4000,
+                                behavior: "smooth",
+                            })
+                        }
+                    >
+                        {t("contactMe")}
+                    </a>
+                </li>
+                <div className="separation"></div>
+                <li>
                     <a href="https://blog.saltykarma.com">
-                        <i className="fa-regular fa-newspaper"></i>Blog
+                        <i className="fa-solid fa-handshake"></i>Malt
                     </a>
                 </li>
                 <li>
