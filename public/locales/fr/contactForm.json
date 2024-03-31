@@ -3,5 +3,6 @@
     "copied": "Copié dans le presse papier",
     "email": "Adresse mail",
     "message": "Message",
-    "send": "Envoyer"
+    "send": "Envoyer",
+    "messagePlaceholder": "Que souhaitez-vous dire ?"
 }

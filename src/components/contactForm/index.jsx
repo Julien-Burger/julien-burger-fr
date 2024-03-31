@@ -17,7 +17,7 @@ function ContactForm() {
     const handleClickCopyEmail = () => {
         setShowCopyEmail(true);
         clearInterval(timerRef.current);
-        navigator.clipboard.writeText("contact@saltykarma.com");
+        navigator.clipboard.writeText("contact@julienburger.com");
 
         timerRef.current = setTimeout(() => {
             setShowCopyEmail(false);
@@ -69,7 +69,7 @@ function ContactForm() {
             </div>
 
             <div className="copyEmail" onClick={handleClickCopyEmail}>
-                {!showCopyEmail && <span>contact@saltykarma.com</span>}
+                {!showCopyEmail && <span>contact@julienburger.com</span>}
                 {showCopyEmail && <span style={{ color: "rgb(13 217 87)" }}>{t("copied")}</span>}
                 {!showCopyEmail && <i className="fa-regular fa-clipboard fa-2x"></i>}
                 {showCopyEmail && <i className="fa-solid fa-clipboard-check fa-2x" style={{ color: "rgb(13 217 87)" }}></i>}
@@ -93,7 +93,7 @@ function ContactForm() {
                     <textarea
                         name="message"
                         id="message"
-                        placeholder="Que souhaitez-vous dire ?"
+                        placeholder={t("messagePlaceholder")}
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                         className={formInvalid ? "formInvalid" : ""}

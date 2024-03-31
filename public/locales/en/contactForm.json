@@ -3,5 +3,6 @@
     "copied": "Copied to the clipboard",
     "email": "Email",
     "message": "Message",
-    "send": "Send"
+    "send": "Send",
+    "messagePlaceholder": "What do you want to say?"
 }
