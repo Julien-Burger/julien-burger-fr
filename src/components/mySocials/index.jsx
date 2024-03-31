@@ -46,9 +46,9 @@ function MySocials() {
                         <i className="fa-brands fa-steam fa-2xl"></i>
                         <span>The Big One</span>
                     </a>
-                    <a href="https://blog.saltykarma.com" className="blog">
-                        <i className="fa-regular fa-newspaper fa-2xl"></i>
-                        <span>Blog</span>
+                    <a href="https://www.malt.fr/profile/julienburger" target="_blank" className="malt">
+                        <i className="fa-solid fa-handshake fa-2xl"></i>
+                        <span>Malt</span>
                     </a>
                 </div>
             </div>
