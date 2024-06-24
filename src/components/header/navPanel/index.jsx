@@ -60,7 +60,7 @@ function NavPanel({ showNavPanel, setShowNavPanel }) {
                     <a
                         onClick={() =>
                             window.scrollTo({
-                                top: 4000,
+                                top: 3720,
                                 behavior: "smooth",
                             })
                         }
@@ -82,7 +82,7 @@ function NavPanel({ showNavPanel, setShowNavPanel }) {
                 </li>
                 <div className="separation"></div>
                 <li>
-                    <a href="https://blog.saltykarma.com">
+                    <a href="https://www.malt.fr/profile/julienburger" target="_blank">
                         <i className="fa-solid fa-handshake"></i>Malt
                     </a>
                 </li>
@@ -92,7 +92,7 @@ function NavPanel({ showNavPanel, setShowNavPanel }) {
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/Salty-Julien" target="_blank">
+                    <a href="https://github.com/Julien-Burger" target="_blank">
                         <i className="fa-brands fa-github"></i>Github
                     </a>
                 </li>
