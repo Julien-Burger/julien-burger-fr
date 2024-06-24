@@ -3,13 +3,12 @@
     "bigProjects": "Gros projets",
     "bigProject1Def": "Logiciel d'impression d'étiquette professionnel",
     "bigProject2Def": "Jeux-vidéo rogue-like, pixelart",
-    "da": "Direction artistique",
     "smallProjects": "Petits projets",
     "smallProject1Def": "Site de notation de livres",
-    "smallProject2Def": "Appli web de location immobilière",
+    "smallProject2Def": "Appli desktop de gestion de temps",
     "read": "Lire l'étude",
-    "markprintText": "Le MarkPrint est un logiciel déstiné au professionnel dans le milieu de la sécurité et du marquage de prévention. J'ai eu l'occasion de développer entièrement l'application sur une plateforme web totalement innovante pour ce type de logiciel.",
-    "tboText": "The Big One est un jeux vidéo en pixel art de type rogue like. Il est le premier jeu développé par mon studio Salty Karma. Initialement prévu comme un petit projet, l'ambition a progressé au fur et à mesure du développement pour finir par une sortie officielle sur Steam le 28 février 2023.",
-    "mvgText": "Mon Vieux Grimoire est un site de notation de livre. Dans ce projet, j'ai eu l'occasion de développer toute la partie \"backend\" avec node.js et une base de donnée non relationnelle avec mongodb. J'ai réalisé ce projet dans le cadre de mon diplôme de développeur full-stack.",
-    "kasaText": "Kasa est un site de location immobilière type Aribnb. Dans ce projet, j'ai eu l'occasion de développer entièrement la partie \"frontend\" avec React. J'ai réalisé ce projet dans le cadre de mon diplôme de développeur full-stack."
+    "bigProject1Text": "MarkPrint est un logiciel déstiné au professionnel dans le milieu de la sécurité et du marquage de prévention, disponible en 8 langues et vendu dans toute l'Europe. J'ai eu l'occasion de développer entièrement l'application sur une plateforme web totalement innovante pour ce type de logiciel. Après cela, l'application a été porté en version desktop pour être utiliser en local par les utilisateurs.",
+    "bigProject2Text": "The Big One est un jeux vidéo en pixel art de type rogue like. Il est le premier jeu développé par mon studio Salty Karma. Initialement prévu comme un petit projet, l'ambition a progressé au fur et à mesure du développement pour finir par une sortie officielle sur Steam le 28 février 2023.",
+    "smalProject1Text": "Time Cycler est une application desktop de gestion de temps. Utile pour se donner des temps de travail suivi d'un temps de pause et d'une répétition de cycle. L'application intègre aussi un chronomètre.",
+    "smalProject2Text": "Mon Vieux Grimoire est un site de notation de livre. Dans ce projet, j'ai eu l'occasion de développer toute la partie \"backend\" avec node.js et une base de donnée non relationnelle avec mongodb. J'ai réalisé ce projet dans le cadre de mon diplôme de développeur full-stack."
 }
