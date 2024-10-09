@@ -11,7 +11,7 @@ function MySocials() {
     const handleClickCopyEmail = () => {
         setShowCopyEmail(true);
         clearInterval(timerRef.current);
-        navigator.clipboard.writeText("Julien_Burger#3311");
+        navigator.clipboard.writeText("Julien Burger");
 
         timerRef.current = setTimeout(() => {
             setShowCopyEmail(false);
@@ -35,7 +35,7 @@ function MySocials() {
                     </a>
                     <div className="discord" onClick={handleClickCopyEmail}>
                         <i className="fa-brands fa-discord fa-xl"></i>
-                        {!showCopyEmail && <span>Julien_Burger#3311</span>}
+                        {!showCopyEmail && <span>Julien Burger</span>}
                         {showCopyEmail && <span>{t("copied")}</span>}
                         {!showCopyEmail && <i className="fa-regular fa-clipboard fa-2xl"></i>}
                         {showCopyEmail && <i className="fa-solid fa-clipboard-check fa-2xl"></i>}
