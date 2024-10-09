@@ -38,7 +38,7 @@ function ContactForm() {
                 message: e.target.message.value,
             };
 
-            await axios.post("http://localhost:4000/contact", data);
+            await axios.post("https://back.julienburger.fr/contact", data);
 
             setEmail("");
             setMessage("");
